@@ -1,32 +1,30 @@
 {
-  "name": "AwesomeProject",
-  "version": "0.1.0",
+  "name": "reactnativelistdetail",
+  "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "react-native-scripts": "0.0.40",
-    "jest-expo": "~18.0.0",
-    "react-test-renderer": "16.0.0-alpha.12"
-  },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "expect": "^1.20.2",
-    "expo": "^18.0.3",
-    "react": "16.0.0-alpha.12",
-    "react-native": "^0.45.1",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.1",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-gesture-handler": "^1.0.12",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^3.0.9"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-redux": "^6.0.0",
+    "react-test-renderer": "16.6.3",
+    "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.3.0"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }

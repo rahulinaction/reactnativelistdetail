@@ -8,16 +8,14 @@ class List extends Component {
     super(props);
     //Initializing a listview datasource
     this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    //We dont have a button hence we fetch items overhere //Refactor
-//    console.log("the props i s",this.props);
+  
     this.props.fetchItems();
   }
 
   render() {
-  //  console.log("the item array is ",Object.values(this.props.fetchedItems));
-  // Need to refactor
+
   const items = Object.values(this.props.fetchedItems);
-  console.log("the items is",items);
+  
   return (
       <ListView
         enableEmptySections={true}
