@@ -53,7 +53,7 @@ const instructions = Platform.select({
 
 
 
-class HomeScreen extends React.Component {
+class HomeScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -64,7 +64,7 @@ class HomeScreen extends React.Component {
 }
 
 
-class DetailsScreen extends React.Component {
+class DetailsScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
